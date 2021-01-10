@@ -19,6 +19,7 @@ h1 {
     color: #fff;
     font-family: 'Lucida Sans',  sans-serif;
     font-size: 70px;
+    /* de ce avem nevoie de pozitionare pt tilturi? este foarte manuala tehnica asta, ordinea layoutului este de sus in jos, avem nevoie doar de spatiere */
     position: absolute;
     top: 15%;
     left: 10%;
@@ -31,6 +32,7 @@ h2 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     width: fit-content;
     position: absolute;
+    /* iar aici daca vreau sa modific orice la h1, trebuie sa revin si aici sa modific ca nu mai face ce initial ai vrut sa faca */
     top: 40%;
     left: 10%;
     font-size: 30px;  
@@ -113,5 +115,9 @@ header>h2>div {
 }
 
 .location>p,.clock>p,.calendar>p {
-    display: inline-block;   
+    display: inline-block;  
+    /* idee pentru a centra textul */
+    position: relative;
+    top: -10px;
+    left: 15px;
 }
